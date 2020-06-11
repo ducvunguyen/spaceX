@@ -65,9 +65,9 @@ class SpaceX{
 var spaceX = new SpaceX(new IdGenerator());
 spaceX.init();
 
-var name = (<HTMLInputElement>document.getElementById('fullname')).value;
 
-(<HTMLButtonElement>document.getElementById("btn_add")).onclick = function() {
+(<HTMLButtonElement>document.getElementById("btn_add")).onclick = function () {
+var name = (<HTMLInputElement>document.getElementById('fullname')).value;
   spaceX.insert(name);
 }
 
